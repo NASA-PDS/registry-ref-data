@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model 
+	href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A10.sch" 
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model 
+	href="https://pds.nasa.gov/pds4/mission/insight/v1/PDS4_INSIGHT_1A10_1830.sch" 
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:insight="http://pds.nasa.gov/pds4/mission/insight/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1     
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A10.xsd
+    
+    http://pds.nasa.gov/pds4/mission/insight/v1 
+    https://pds.nasa.gov/pds4/mission/insight/v1/PDS4_INSIGHT_1A10_1830.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:insight_rad:data_raw:hp3_rad_raw_00478_20200401_121608</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>InSight HP3 Radiometer Experiment Raw Product:hp3_rad_raw_00478_20200401_121608</title>
+        <information_model_version>1.10.1.0</information_model_version>
+        <product_class>Product_Observational</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-09-09</modification_date>
+                <version_id>1.0</version_id>
+                <description>Release 6</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Observation_Area>
+        <Time_Coordinates>
+            <start_date_time>2020-04-01T00:16:08.395Z</start_date_time>
+            <stop_date_time>2020-06-30T23:59:29.047Z</stop_date_time>
+        </Time_Coordinates>
+        <Investigation_Area>
+            <name>InSight</name>
+            <type>Mission</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:investigation:mission.insight</lid_reference>
+                <reference_type>data_to_investigation</reference_type>
+            </Internal_Reference>
+        </Investigation_Area>
+        <Observing_System>
+            <Observing_System_Component>
+                <name>InSight</name>
+                <type>Spacecraft</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.insight</lid_reference>
+                    <reference_type>is_instrument_host</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+            <Observing_System_Component>
+                <name>Radiometer</name>
+                <type>Instrument</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument:radiometer.insight</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+        </Observing_System>
+        <Target_Identification>
+            <name>Mars</name>
+            <type>Planet</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+                <reference_type>data_to_target</reference_type>
+            </Internal_Reference>
+        </Target_Identification>
+        <Mission_Area>
+            <insight:Observation_Information>
+                <insight:release_number>0006</insight:release_number>
+                <insight:mission_phase_name>SURFACE MISSION</insight:mission_phase_name>
+                <insight:product_type>RAD-raw</insight:product_type>
+                <insight:spacecraft_clock_start_count>638972080-04063</insight:spacecraft_clock_start_count>
+                <insight:spacecraft_clock_stop_count>646833467-42074</insight:spacecraft_clock_stop_count>
+                <insight:spacecraft_clock_count_partition>1</insight:spacecraft_clock_count_partition>
+                <insight:start_sol_number>00478</insight:start_sol_number>
+                <insight:stop_sol_number>00567</insight:stop_sol_number>
+                <insight:start_local_mean_solar_time>Sol-00478M15:17:18</insight:start_local_mean_solar_time>
+                <insight:stop_local_mean_solar_time>Sol-00567M04:35:01</insight:stop_local_mean_solar_time>
+                <insight:start_solar_longitude unit="deg">175.718</insight:start_solar_longitude>
+                <insight:stop_solar_longitude unit="deg">229.943</insight:stop_solar_longitude>
+                <insight:software_name>XML Archiv Tool</insight:software_name>
+                <insight:software_version_id>1.0.2</insight:software_version_id>
+            </insight:Observation_Information>
+        </Mission_Area>
+    </Observation_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:insight_documents:document_mission</lid_reference>
+            <reference_type>data_to_document</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:insight_documents:document_hp3rad:hp3_rad_sis</lid_reference>
+            <reference_type>data_to_document</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <File_Area_Observational>
+        <File>
+            <file_name>hp3_rad_raw_00478_20200401_121608.tab</file_name>
+            <creation_date_time>2020-09-04T00:03:58.459Z</creation_date_time>
+        </File>
+        <Table_Character>
+            <name>RAD RAW</name>
+            <offset unit="byte">0</offset>
+            <records>37633</records>
+            <description>One row of this table contains raw Radiometer data.</description>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <Record_Character>
+                <fields>35</fields>
+                <groups>0</groups>
+                <record_length unit="byte">331</record_length>
+                <Field_Character>
+                    <name>Spacecraft clock time</name>
+                    <field_number>1</field_number>
+                    <field_location unit="byte">1</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">17</field_length>
+                    <unit>sec</unit>
+                    <description>Spacecraft clock count at which measurement occurred, represented as a real number. Note that spacecraft_clock_start_count and spacecraft_clock_stop_count in the Mission Area of this label are represented not as a real number but as a whole number followed by  a fractional clock tick, where the fraction is in units of 1/65536 of a tick.</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Sol</name>
+                    <field_number>2</field_number>
+                    <field_location unit="byte">19</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">5</field_length>
+                    <unit>DN</unit>
+                    <description>Sol number for this set of measurements</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Thermopile1A_TC</name>
+                    <field_number>3</field_number>
+                    <field_location unit="byte">25</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Instrument reading for channel 1A</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Thermopile2A_TC</name>
+                    <field_number>4</field_number>
+                    <field_location unit="byte">34</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Instrument reading for channel 2A</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Thermopile1B_TC</name>
+                    <field_number>5</field_number>
+                    <field_location unit="byte">43</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Instrument reading for channel 1B</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Thermopile2B_TC</name>
+                    <field_number>6</field_number>
+                    <field_location unit="byte">52</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Instrument reading for channel 2B</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Thermopile1C_TC</name>
+                    <field_number>7</field_number>
+                    <field_location unit="byte">61</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Instrument reading for channel 1C</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Thermopile2C_TC</name>
+                    <field_number>8</field_number>
+                    <field_location unit="byte">70</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Instrument reading for channel 2C</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Thermopile1A_PT</name>
+                    <field_number>9</field_number>
+                    <field_location unit="byte">79</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Instrument reading for channel 1A</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Thermopile2A_PT</name>
+                    <field_number>10</field_number>
+                    <field_location unit="byte">88</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Instrument reading for channel 2A</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Thermopile1B_PT</name>
+                    <field_number>11</field_number>
+                    <field_location unit="byte">97</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Instrument reading for channel 1B</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Thermopile2B_PT</name>
+                    <field_number>12</field_number>
+                    <field_location unit="byte">106</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Instrument reading for channel 2B</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Thermopile1C_PT</name>
+                    <field_number>13</field_number>
+                    <field_location unit="byte">115</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Instrument reading for channel 1C</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Thermopile2C_PT</name>
+                    <field_number>14</field_number>
+                    <field_location unit="byte">124</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Instrument reading for channel 2C</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>ADC1_Rref</name>
+                    <field_number>15</field_number>
+                    <field_location unit="byte">133</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>ADC 1 reference 100 Ohm resistor reading</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>ADC2_Rref</name>
+                    <field_number>16</field_number>
+                    <field_location unit="byte">142</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>ADC 2 reference 100 Ohm resistor reading</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>PT Cal Target</name>
+                    <field_number>17</field_number>
+                    <field_location unit="byte">151</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Reading of calibration target PT 100 temperature sensor</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>PT Sensor Head</name>
+                    <field_number>18</field_number>
+                    <field_location unit="byte">160</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Reading of calibration target PT 100 temperature sensor</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Offset Thermopile1A_PT</name>
+                    <field_number>19</field_number>
+                    <field_location unit="byte">169</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Offset reading for channel 1A</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Offset Thermopile2A_PT</name>
+                    <field_number>20</field_number>
+                    <field_location unit="byte">178</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Offset reading for channel 2A</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Offset Thermopile1B_PT</name>
+                    <field_number>21</field_number>
+                    <field_location unit="byte">187</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Offset reading for channel 1B</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Offset Thermopile2B_PT</name>
+                    <field_number>22</field_number>
+                    <field_location unit="byte">196</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Offset reading for channel 2B</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Offset Thermopile1C_PT</name>
+                    <field_number>23</field_number>
+                    <field_location unit="byte">205</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Offset reading for channel 1C</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Offset Thermopile2C_PT</name>
+                    <field_number>24</field_number>
+                    <field_location unit="byte">214</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Offset reading for channel 2C</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Offset ADC1_Rref</name>
+                    <field_number>25</field_number>
+                    <field_location unit="byte">223</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>ADC 1 reference 100 Ohm resistor offset reading</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Offset ADC2_Rref</name>
+                    <field_number>26</field_number>
+                    <field_location unit="byte">232</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>ADC 2 reference 100 Ohm resistor offset reading</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Offset PT Cal Target</name>
+                    <field_number>27</field_number>
+                    <field_location unit="byte">241</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Offset reading of calibration target PT 100 temperature sensor</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Offset PT Sensor Head</name>
+                    <field_number>28</field_number>
+                    <field_location unit="byte">250</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>Offset reading of calibration target PT 100 temperature sensor</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>HK Space craft clock</name>
+                    <field_number>29</field_number>
+                    <field_location unit="byte">259</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">17</field_length>
+                    <unit>DN</unit>
+                    <description>Time of closest HK vector used to for columns 30 to 35 (labelled as HK)</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Radiometer operation mode</name>
+                    <field_number>30</field_number>
+                    <field_location unit="byte">277</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>HK of currently active radiometer operation mode </description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Section of sol</name>
+                    <field_number>31</field_number>
+                    <field_location unit="byte">286</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>HK Software counter governing the switching of operating temperature in order to coordinate with local time</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>TRefHigh Select</name>
+                    <field_number>32</field_number>
+                    <field_location unit="byte">295</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>HK Flag indicating that the higher of the two daytime operating temperatures is selected</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Sensorhead body heater PWM</name>
+                    <field_number>33</field_number>
+                    <field_location unit="byte">304</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>HK of currently commanded value of the sensorhead heater current source</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Cal. Target heater PWM</name>
+                    <field_number>34</field_number>
+                    <field_location unit="byte">313</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>DN</unit>
+                    <description>HK of currently commanded value of the calibration heater current source</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Radiometer test mode</name>
+                    <field_number>35</field_number>
+                    <field_location unit="byte">322</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <description>HK flag that is true the radiometer test mode is on</description>
+                </Field_Character>
+            </Record_Character>
+        </Table_Character>
+    </File_Area_Observational>
+</Product_Observational>

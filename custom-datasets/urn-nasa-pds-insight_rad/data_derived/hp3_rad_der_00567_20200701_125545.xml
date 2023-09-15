@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-model 
+	href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A10.sch" 
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model 
+	href="https://pds.nasa.gov/pds4/mission/insight/v1/PDS4_INSIGHT_1A10_1830.sch" 
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational
+    xmlns="http://pds.nasa.gov/pds4/pds/v1"
+    xmlns:insight="http://pds.nasa.gov/pds4/mission/insight/v1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1     
+    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A10.xsd
+    
+    http://pds.nasa.gov/pds4/mission/insight/v1 
+    https://pds.nasa.gov/pds4/mission/insight/v1/PDS4_INSIGHT_1A10_1830.xsd">
+    <Identification_Area>
+        <logical_identifier>urn:nasa:pds:insight_rad:data_derived:hp3_rad_der_00567_20200701_125545</logical_identifier>
+        <version_id>1.0</version_id>
+        <title>InSight HP3 Radiometer Experiment Derived Product:hp3_rad_der_00567_20200701_125545</title>
+        <information_model_version>1.10.1.0</information_model_version>
+        <product_class>Product_Observational</product_class>
+        <Modification_History>
+            <Modification_Detail>
+                <modification_date>2020-12-03</modification_date>
+                <version_id>1.0</version_id>
+                <description>Release 7</description>
+            </Modification_Detail>
+        </Modification_History>
+    </Identification_Area>
+    <Observation_Area>
+        <Time_Coordinates>
+            <start_date_time>2020-07-01T00:55:45.002Z</start_date_time>
+            <stop_date_time>2020-10-12T03:14:38.501Z</stop_date_time>
+        </Time_Coordinates>
+        <Investigation_Area>
+            <name>InSight</name>
+            <type>Mission</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:investigation:mission.insight</lid_reference>
+                <reference_type>data_to_investigation</reference_type>
+            </Internal_Reference>
+        </Investigation_Area>
+        <Observing_System>
+            <Observing_System_Component>
+                <name>InSight</name>
+                <type>Spacecraft</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.insight</lid_reference>
+                    <reference_type>is_instrument_host</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+            <Observing_System_Component>
+                <name>Radiometer</name>
+                <type>Instrument</type>
+                <Internal_Reference>
+                    <lid_reference>urn:nasa:pds:context:instrument:radiometer.insight</lid_reference>
+                    <reference_type>is_instrument</reference_type>
+                </Internal_Reference>
+            </Observing_System_Component>
+        </Observing_System>
+        <Target_Identification>
+            <name>Mars</name>
+            <type>Planet</type>
+            <Internal_Reference>
+                <lid_reference>urn:nasa:pds:context:target:planet.mars</lid_reference>
+                <reference_type>data_to_target</reference_type>
+            </Internal_Reference>
+        </Target_Identification>
+        <Mission_Area>
+            <insight:Observation_Information>
+                <insight:release_number>0007</insight:release_number>
+                <insight:mission_phase_name>SURFACE MISSION</insight:mission_phase_name>
+                <insight:product_type>RAD-derived</insight:product_type>
+                <insight:spacecraft_clock_start_count>646836843-38797</insight:spacecraft_clock_start_count>
+                <insight:spacecraft_clock_stop_count>655744367-38404</insight:spacecraft_clock_stop_count>
+                <insight:spacecraft_clock_count_partition>1</insight:spacecraft_clock_count_partition>
+                <insight:start_sol_number>00567</insight:start_sol_number>
+                <insight:stop_sol_number>00667</insight:stop_sol_number>
+                <insight:start_local_mean_solar_time>Sol-00567M05:29:47</insight:start_local_mean_solar_time>
+                <insight:stop_local_mean_solar_time>Sol-00667M13:36:33</insight:stop_local_mean_solar_time>
+                <insight:start_solar_longitude unit="deg">229.967</insight:start_solar_longitude>
+                <insight:stop_solar_longitude unit="deg">294.618</insight:stop_solar_longitude>
+                <insight:software_name>XML Archiv Tool</insight:software_name>
+                <insight:software_version_id>1.0.2</insight:software_version_id>
+            </insight:Observation_Information>
+        </Mission_Area>
+    </Observation_Area>
+    <Reference_List>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:insight_documents:document_mission</lid_reference>
+            <reference_type>data_to_document</reference_type>
+        </Internal_Reference>
+        <Internal_Reference>
+            <lid_reference>urn:nasa:pds:insight_documents:document_hp3rad:hp3_rad_sis</lid_reference>
+            <reference_type>data_to_document</reference_type>
+        </Internal_Reference>
+    </Reference_List>
+    <File_Area_Observational>
+        <File>
+            <file_name>hp3_rad_der_00567_20200701_125545.tab</file_name>
+            <creation_date_time>2020-12-03T14:25:40.978Z</creation_date_time>
+        </File>
+        <Table_Character>
+            <name>RAD DER</name>
+            <offset unit="byte">0</offset>
+            <records>1153</records>
+            <description>One row of this table contains derived Radiometer data.</description>
+            <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+            <Record_Character>
+                <fields>19</fields>
+                <groups>0</groups>
+                <record_length unit="byte">186</record_length>
+                <Field_Character>
+                    <name>Universal coordinated time</name>
+                    <field_number>1</field_number>
+                    <field_location unit="byte">1</field_location>
+                    <data_type>ASCII_Date_Time_YMD_UTC</data_type>
+                    <field_length unit="byte">25</field_length>
+                    <unit>Date</unit>
+                    <description>Date and time</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Sol</name>
+                    <field_number>2</field_number>
+                    <field_location unit="byte">27</field_location>
+                    <data_type>ASCII_Integer</data_type>
+                    <field_length unit="byte">5</field_length>
+                    <unit>DN</unit>
+                    <description>Sol number for this set of measurements</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Mars True Local Solar Time</name>
+                    <field_number>3</field_number>
+                    <field_location unit="byte">33</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>1/24 sol</unit>
+                    <description>Local true solar time in Mars hours of 3699 seconds</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Solar longitude LS</name>
+                    <field_number>4</field_number>
+                    <field_location unit="byte">42</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>degree</unit>
+                    <description>Mars sun angle from northern hemisphere spring equinox</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Sun Azimuth</name>
+                    <field_number>5</field_number>
+                    <field_location unit="byte">51</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>degree</unit>
+                    <description>Local sun azimuth relative to north</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Sun Phase angle FOV 1</name>
+                    <field_number>6</field_number>
+                    <field_location unit="byte">60</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>degree</unit>
+                    <description>Sun to FoV 1 line of sight (LOS) center </description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Incidence angle FOV 1</name>
+                    <field_number>7</field_number>
+                    <field_location unit="byte">69</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>degree</unit>
+                    <description>Sun to surface normal at FOV 1</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Sigma Sun Phase angle FOV 1</name>
+                    <field_number>8</field_number>
+                    <field_location unit="byte">78</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>degree</unit>
+                    <description>Standard deviation over FOV 1 of Sun phase angle FOV 1</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Sigma Incidence angle FOV 1</name>
+                    <field_number>9</field_number>
+                    <field_location unit="byte">87</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>degree</unit>
+                    <description>Standard deviation over FOV 1 of incidence angle FOV 1</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Shadow FOV 1</name>
+                    <field_number>10</field_number>
+                    <field_location unit="byte">96</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>%</unit>
+                    <description>Fraction of lander shadow in FOV 1</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Sun Phase angle FOV 2</name>
+                    <field_number>11</field_number>
+                    <field_location unit="byte">105</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>degree</unit>
+                    <description>Sun to FoV 2 line of sight (LOS) center </description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Incidence angle FOV 2</name>
+                    <field_number>12</field_number>
+                    <field_location unit="byte">114</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>degree</unit>
+                    <description>Sun to surface normal at FOV 2</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Sigma Sun Phase angle FOV 2</name>
+                    <field_number>13</field_number>
+                    <field_location unit="byte">123</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>degree</unit>
+                    <description>Standard deviation over FOV 1 of Sun phase angle FOV 2</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Sigma Incidence angle FOV 2</name>
+                    <field_number>14</field_number>
+                    <field_location unit="byte">132</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>degree</unit>
+                    <description>Standard deviation over FOV 1 of incidence angle FOV 2</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>Shadow FOV 2</name>
+                    <field_number>15</field_number>
+                    <field_location unit="byte">141</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>%</unit>
+                    <description>Fraction of lander shadow in FOV 2</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>TS FoV 1</name>
+                    <field_number>16</field_number>
+                    <field_location unit="byte">150</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>K</unit>
+                    <description>Surface temperature for FoV 1</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>TS FoV 2</name>
+                    <field_number>17</field_number>
+                    <field_location unit="byte">159</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>K</unit>
+                    <description>Surface temperature for FoV 2</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>DTS FoV 1</name>
+                    <field_number>18</field_number>
+                    <field_location unit="byte">168</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>K</unit>
+                    <description>Temperature error for FoV 1</description>
+                </Field_Character>
+                <Field_Character>
+                    <name>DTS FoV 2</name>
+                    <field_number>19</field_number>
+                    <field_location unit="byte">177</field_location>
+                    <data_type>ASCII_Real</data_type>
+                    <field_length unit="byte">8</field_length>
+                    <unit>K</unit>
+                    <description>Temperature error for FoV 2</description>
+                </Field_Character>
+            </Record_Character>
+        </Table_Character>
+    </File_Area_Observational>
+</Product_Observational>
