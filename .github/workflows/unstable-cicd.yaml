@@ -66,7 +66,7 @@ jobs:
                    command: c
                    cwd: .
                    files: |
-                       ./custom-datasets
+                        ./custom-datasets
 	           outPath: custom-datasets.tar.gz
              - name: Upload binaries to release
                uses: svenstaro/upload-release-action@v2
