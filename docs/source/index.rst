@@ -1,17 +1,14 @@
 Overview
 ========
 
-Welcome to your PDS template package! Have Fun!
-
-
+Welcome to the PDS registry reference dataset page
 
 Sitemap
 =======
 
-.. /overview
-
 ..  toctree::
-    :glob:
-    :caption: Support
+   :glob:
 
-    /support/*
+   /support/*
+
+
