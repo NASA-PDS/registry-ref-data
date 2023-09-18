@@ -58,7 +58,7 @@ jobs:
                     lfs: true
                     token: ${{secrets.ADMIN_GITHUB_TOKEN}}
                     fetch-depth: 0
-            -   
+            -
                 name: Build archive
                 uses: a7ul/tar-action@v1.1.0
                 id: compress
@@ -67,23 +67,23 @@ jobs:
                     cwd: .
                     files: |
                         ./custom-datasets
-	            outPath: custom-datasets.tar.gz
-             - 
+      	            outPath: custom-datasets.tar.gz
+             -
                 name: Upload binaries to release
                 uses: svenstaro/upload-release-action@v2
                 with:
                     repo_token: ${{ secrets.ADMIN_GITHUB_TOKEN }}
                     file: custom-datasets.tar.gz
-                    asset_name: reference dataset 
+                    asset_name: reference dataset
                     tag: ${{ github.ref }}
                     overwrite: true
                     body: "Latest reference test dataset"
-            - 
-		name: Build sphinx documentation
+            -
+                name: Build sphinx documentation
                 uses: ammaraskar/sphinx-action@master
                 with:
                     docs-folder: "docs/"
-            - 
+            -
                  name: Deploy 🚀
                  uses: JamesIves/github-pages-deploy-action@v4
                  with:
