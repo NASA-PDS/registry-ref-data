@@ -65,8 +65,7 @@ jobs:
                 with:
                     command: c
                     cwd: .
-                    files: |
-                        ./custom-datasets
+                    files: ./custom-datasets
       	            outPath: custom-datasets.tar.gz
              -
                 name: Upload binaries to release
