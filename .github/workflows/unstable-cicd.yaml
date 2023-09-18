@@ -66,7 +66,7 @@ jobs:
                     command: cjf
                     files: |
                         ./custom-datasets
-      	            outPath: custom-datasets.tar.gz
+                    outPath: custom-datasets.tar.gz
              -
                 name: Upload binaries to release
                 uses: svenstaro/upload-release-action@v2
