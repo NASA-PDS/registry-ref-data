@@ -67,7 +67,7 @@ jobs:
                     files: |
                         ./custom-datasets
                     outPath: custom-datasets.tar.gz
-             -
+            -
                 name: Upload binaries to release
                 uses: svenstaro/upload-release-action@v2
                 with:
@@ -83,10 +83,10 @@ jobs:
                 with:
                     docs-folder: "docs/"
             -
-                 name: Deploy 🚀
-                 uses: JamesIves/github-pages-deploy-action@v4
-                 with:
-                     folder: docs/build # The folder the action should deploy.
+                name: Deploy 🚀
+                uses: JamesIves/github-pages-deploy-action@v4
+                with:
+                    folder: docs/build # The folder the action should deploy.
 
 
 
