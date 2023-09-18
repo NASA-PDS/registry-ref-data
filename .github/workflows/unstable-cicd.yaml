@@ -69,14 +69,11 @@ jobs:
                     outPath: custom-datasets.tar.gz
             -
                 name: Upload binaries to release
-                uses: svenstaro/upload-release-action@v2
+                uses: softprops/action-gh-release@v1
                 with:
-                    repo_token: ${{ secrets.ADMIN_GITHUB_TOKEN }}
-                    file: custom-datasets.tar.gz
-                    asset_name: reference dataset
-                    tag: latest
-                    overwrite: true
-                    body: "Latest reference test dataset"
+                    tag_name: Latest
+                    files: |
+                        custom-datasets.tar.gz
             -
                 name: Install dependencies
                 run: |
