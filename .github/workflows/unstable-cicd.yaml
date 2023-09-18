@@ -81,12 +81,12 @@ jobs:
             -
                 name: Sphinx build
                 run: |
-                    sphinx-build docs/sources docs/build
+                    sphinx-build docs/source docs/builds
             -
                 name: Deploy 🚀
                 uses: JamesIves/github-pages-deploy-action@v4
                 with:
-                    folder: docs/build # The folder the action should deploy.
+                    folder: docs/builds # The folder the action should deploy.
 
 
 
