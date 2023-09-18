@@ -74,7 +74,7 @@ jobs:
                     repo_token: ${{ secrets.ADMIN_GITHUB_TOKEN }}
                     file: custom-datasets.tar.gz
                     asset_name: reference dataset
-                    tag: ${{ github.ref }}
+                    tag: latest
                     overwrite: true
                     body: "Latest reference test dataset"
             -
