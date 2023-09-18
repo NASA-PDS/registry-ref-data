@@ -78,10 +78,13 @@ jobs:
                     overwrite: true
                     body: "Latest reference test dataset"
             -
-                name: Build sphinx documentation
-                uses: ammaraskar/sphinx-action@master
-                with:
-                    docs-folder: "docs/"
+                name: Install dependencies
+                run: |
+                    pip install sphinx sphinx_rtd_theme
+            -
+                name: Sphinx build
+                run: |
+                    sphinx-build doc _build
             -
                 name: Deploy 🚀
                 uses: JamesIves/github-pages-deploy-action@v4
