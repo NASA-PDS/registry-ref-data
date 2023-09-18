@@ -63,7 +63,7 @@ jobs:
                 uses: a7ul/tar-action@v1.1.0
                 id: compress
                 with:
-                    command: cjf
+                    command: c
                     files: |
                         ./custom-datasets
                     outPath: custom-datasets.tar.gz
