@@ -64,7 +64,8 @@ jobs:
                 id: compress
                 with:
                     command: cjf
-                    files: ./custom-datasets
+                    files: |
+                        ./custom-datasets
       	            outPath: custom-datasets.tar.gz
              -
                 name: Upload binaries to release
