@@ -2,7 +2,7 @@
 
 Reference datasets used for integration test of the registry.
 
-This repository aims at maintaining the reference datasets on github before them being published on https://pds.nasa.gov/data/pds4/test-data/custom-datasets/
+This repository aims at maintaining the reference datasets on github before them being published as a release of this repository and used by the integration tests (in docker compose) in the NASA-PDS/registry repository.
 
 ## Tester manual:
 
