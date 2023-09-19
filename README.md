@@ -17,7 +17,7 @@ This repository aims at maintaining the reference datasets on github before them
 
 3. Commit your changes and push them
 
-4. The new reference dataset will be published in the Latest release of the repository
+4. The new reference dataset will be published in the Latest release of the repository and automatically used by the docker compose deployment in the `NASA-PDS/registry` repository.
 
  
 
