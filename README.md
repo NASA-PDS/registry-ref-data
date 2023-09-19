@@ -10,29 +10,26 @@ This repository aims at maintaining the reference datasets on github before them
 
 2. Update the reference test datasets as needed for the feature/bug fix that need to be tested.
 
+3. reduce the size of the data files as much as possible:
+
+	a. Binary files, use `truncate`
+        b. CSV or TAB files, use sed, e.g. `sed '10,$ d' input.csv` 
+
 3. Commit your changes and push them
 
-4. Create the test dataset package:
+4. The new reference dataset will be published in the Latest release of the repository
 
-    % tar cvzf custom-datasets.tar.gz  custom-datasets
-
-5. Publish it:
-
-    % scp custom-datasets.tar.gz {/tmp in the cloud machine}
-    % ssh cloud-machine
-    % ssh pds4@localhost
-    % cp /tmp/custom-datasets.tar.gz {to the folder where the data is published}
-
+ 
 
 ### Documentation
 
 Your project should use [Sphinx](https://www.sphinx-doc.org/en/master/) to build its documentation. PDS' documentation template is already configured as part of the default build. You can build your projects docs with:
 
-    python setup.py build_sphinx
+    sphinx-build -b html docs/source docs/builds/
 
 You can access the build files in the following directory relative to the project root:
 
-    build/sphinx/html/
+    build/
 
 ## CI/CD
 
