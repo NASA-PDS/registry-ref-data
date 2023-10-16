@@ -60,7 +60,7 @@ jobs:
                     fetch-depth: 0
             -
                 name: Build archive
-                uses: a7ul/tar-action@v1.1.0
+                uses: a7ul/tar-action@v1.1.3
                 id: compress
                 with:
                     command: c
