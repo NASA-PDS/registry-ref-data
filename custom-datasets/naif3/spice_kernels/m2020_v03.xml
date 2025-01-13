@@ -4,7 +4,7 @@
 
 <Product_SPICE_Kernel xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1500.xsd">
   <Identification_Area>
-    <logical_identifier>urn:nasa:pds:mars2020.spice:spice_kernels:mk_m2020</logical_identifier>
+    <logical_identifier>urn:nasa:pds:mars2020.spice_test3:spice_kernels:mk_m2020</logical_identifier>
     <version_id>3.0</version_id>
     <title>m2020_v03.tm</title>
     <information_model_version>1.5.0.0</information_model_version>
@@ -53,143 +53,143 @@
   </Context_Area>
   <Reference_List>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:document:spiceds</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:document:spiceds</lid_reference>
       <reference_type>data_to_document</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:lsk_naif0012.tls</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:lsk_naif0012.tls</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:pck_pck00010.tpc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:pck_pck00010.tpc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:fk_m2020_v04.tf</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:fk_m2020_v04.tf</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:ik_m2020_struct_v00.ti</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ik_m2020_struct_v00.ti</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:sclk_m2020_lmst_ops210303_v1.tsc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:sclk_m2020_lmst_ops210303_v1.tsc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:sclk_m2020_168_sclkscet_refit_v03.tsc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:sclk_m2020_168_sclkscet_refit_v03.tsc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:spk_de438s.bsp</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:spk_de438s.bsp</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:spk_mar097.bsp</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:spk_mar097.bsp</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:spk_m2020_struct_v01.bsp</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:spk_m2020_struct_v01.bsp</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:spk_m2020_cruise_od138_v1.bsp</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:spk_m2020_cruise_od138_v1.bsp</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:spk_m2020_edl_v01.bsp</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:spk_m2020_edl_v01.bsp</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:spk_m2020_ls_ops210303_iau2000_v1.bsp</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:spk_m2020_ls_ops210303_iau2000_v1.bsp</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:spk_m2020_surf_rover_loc_0000_0089_v1.bsp</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:spk_m2020_surf_rover_loc_0000_0089_v1.bsp</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:spk_m2020_surf_rover_loc_0089_0179_v1.bsp</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:spk_m2020_surf_rover_loc_0089_0179_v1.bsp</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:spk_m2020_surf_rover_loc_0179_0299_v1.bsp</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:spk_m2020_surf_rover_loc_0179_0299_v1.bsp</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:ck_m2020_turret_tools_v1.bc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ck_m2020_turret_tools_v1.bc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:ck_m2020_cruise_recon_rawrt_v1.bc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ck_m2020_cruise_recon_rawrt_v1.bc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:ck_m2020_cruise_recon_raweng_v1.bc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ck_m2020_cruise_recon_raweng_v1.bc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:ck_m2020_edl_v01.bc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ck_m2020_edl_v01.bc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:ck_m2020_surf_ra_tlmenc_0000_0089_v1.bc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ck_m2020_surf_ra_tlmenc_0000_0089_v1.bc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:ck_m2020_surf_ra_tlmenc_0089_0179_v1.bc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ck_m2020_surf_ra_tlmenc_0089_0179_v1.bc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:ck_m2020_surf_ra_tlmenc_0179_0299_v1.bc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ck_m2020_surf_ra_tlmenc_0179_0299_v1.bc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:ck_m2020_surf_ra_tlmres_0000_0089_v1.bc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ck_m2020_surf_ra_tlmres_0000_0089_v1.bc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:ck_m2020_surf_ra_tlmres_0089_0179_v1.bc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ck_m2020_surf_ra_tlmres_0089_0179_v1.bc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:ck_m2020_surf_ra_tlmres_0179_0299_v1.bc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ck_m2020_surf_ra_tlmres_0179_0299_v1.bc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:ck_m2020_surf_rsm_tlmenc_0000_0089_v1.bc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ck_m2020_surf_rsm_tlmenc_0000_0089_v1.bc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:ck_m2020_surf_rsm_tlmenc_0089_0179_v1.bc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ck_m2020_surf_rsm_tlmenc_0089_0179_v1.bc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:ck_m2020_surf_rsm_tlmenc_0179_0299_v1.bc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ck_m2020_surf_rsm_tlmenc_0179_0299_v1.bc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:ck_m2020_surf_rsm_tlmres_0000_0089_v1.bc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ck_m2020_surf_rsm_tlmres_0000_0089_v1.bc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:ck_m2020_surf_rsm_tlmres_0089_0179_v1.bc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ck_m2020_surf_rsm_tlmres_0089_0179_v1.bc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:ck_m2020_surf_rsm_tlmres_0179_0299_v1.bc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ck_m2020_surf_rsm_tlmres_0179_0299_v1.bc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:ck_m2020_surf_rover_tlm_0000_0089_v1.bc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ck_m2020_surf_rover_tlm_0000_0089_v1.bc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:ck_m2020_surf_rover_tlm_0089_0179_v1.bc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ck_m2020_surf_rover_tlm_0089_0179_v1.bc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:spice_kernels:ck_m2020_surf_rover_tlm_0179_0299_v1.bc</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ck_m2020_surf_rover_tlm_0179_0299_v1.bc</lid_reference>
       <reference_type>data_to_associate</reference_type>
     </Internal_Reference>
   </Reference_List>

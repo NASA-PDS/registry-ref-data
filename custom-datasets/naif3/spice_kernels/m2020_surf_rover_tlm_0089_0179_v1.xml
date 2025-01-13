@@ -4,7 +4,7 @@
 
 <Product_SPICE_Kernel xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1500.xsd">
   <Identification_Area>
-    <logical_identifier>urn:nasa:pds:mars2020.spice:spice_kernels:ck_m2020_surf_rover_tlm_0089_0179_v1.bc</logical_identifier>
+    <logical_identifier>urn:nasa:pds:mars2020.spice_test3:spice_kernels:ck_m2020_surf_rover_tlm_0089_0179_v1.bc</logical_identifier>
     <version_id>1.0</version_id>
     <title>m2020_surf_rover_tlm_0089_0179_v1.bc</title>
     <information_model_version>1.5.0.0</information_model_version>
@@ -53,7 +53,7 @@
   </Context_Area>
   <Reference_List>
     <Internal_Reference>
-      <lid_reference>urn:nasa:pds:mars2020.spice:document:spiceds</lid_reference>
+      <lid_reference>urn:nasa:pds:mars2020.spice_test3:document:spiceds</lid_reference>
       <reference_type>data_to_document</reference_type>
     </Internal_Reference>
   </Reference_List>
