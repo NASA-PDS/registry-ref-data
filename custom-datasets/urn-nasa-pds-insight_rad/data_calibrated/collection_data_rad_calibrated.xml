@@ -14,7 +14,6 @@
 	<Citation_Information>
 	    <author_list>InSight RAD Science Team</author_list>
             <publication_year>2018</publication_year>
-            <doi>10.17189/1517568</doi>
             <description> The InSight Radiometer data bundle consists of data in three collections: data_raw, data_calibrated, and data_derived. The bundle also includes the HP3/RAD Software Interface Specification in the HP3/RAD document collection. </description>
         </Citation_Information>
         <Modification_History>
