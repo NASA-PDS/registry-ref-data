@@ -36,7 +36,7 @@
     <Observation_Area>
         <Time_Coordinates>
             <start_date_time>2018-12-11T07:30:42.598Z</start_date_time>
-            <stop_date_time>2019-03-31T23:36:01.945Z</stop_date_time>
+            <stop_date_time>2019-03-31T23:59:60.862Z</stop_date_time>
         </Time_Coordinates>
         <Investigation_Area>
             <name>InSight</name>
@@ -469,4 +469,5 @@
             </Record_Character>
         </Table_Character>
     </File_Area_Observational>
+
 </Product_Observational>
