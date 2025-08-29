@@ -77,7 +77,7 @@ jobs:
             -
                 name: Install dependencies
                 run: |
-                    pip install sphinx sphinx_rtd_theme
+                    pip install 'sphinx~=8.2.3' 'sphinx_rtd_theme~=3.0.2'
             -
                 name: Sphinx build
                 run: |
