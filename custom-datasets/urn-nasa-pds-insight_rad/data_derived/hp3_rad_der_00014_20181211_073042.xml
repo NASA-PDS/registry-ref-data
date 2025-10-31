@@ -2,6 +2,8 @@
 <?xml-model 
 	href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A10.sch" 
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/cart/v1/PDS4_CART_1M00_1970.sch"
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model 
 	href="https://pds.nasa.gov/pds4/mission/insight/v1/PDS4_INSIGHT_1A10_1830.sch" 
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
@@ -72,6 +74,75 @@
                 <reference_type>data_to_target</reference_type>
             </Internal_Reference>
         </Target_Identification>
+        <Discipline_Area>
+            <cart:Cartography>
+                <Local_Internal_Reference>
+                    <local_identifier_reference>Array_3D_Image</local_identifier_reference>
+                    <local_reference_type>cartography_parameters_to_image_object</local_reference_type>
+                </Local_Internal_Reference>
+                <cart:Spatial_Domain>
+                    <cart:Bounding_Coordinates>
+                        <cart:west_bounding_coordinate unit="deg">-180.0</cart:west_bounding_coordinate>
+                        <cart:east_bounding_coordinate unit="deg">179.0</cart:east_bounding_coordinate>
+                        <cart:north_bounding_coordinate unit="deg">90.0</cart:north_bounding_coordinate>
+                        <cart:south_bounding_coordinate unit="deg">-90.0</cart:south_bounding_coordinate>
+                    </cart:Bounding_Coordinates>
+                </cart:Spatial_Domain>
+                <cart:Spatial_Reference_Information>
+                    <cart:Horizontal_Coordinate_System_Definition>
+                        <cart:Planar>
+                            <cart:Map_Projection>
+                                <cart:map_projection_name>Equirectangular</cart:map_projection_name>
+                                <cart:Equirectangular>
+                                    <cart:latitude_of_projection_origin unit="deg">0</cart:latitude_of_projection_origin>
+                                    <cart:standard_parallel_1 unit="deg">0</cart:standard_parallel_1>
+                                    <cart:longitude_of_central_meridian unit="deg">0</cart:longitude_of_central_meridian>
+                                </cart:Equirectangular>
+                            </cart:Map_Projection>
+                            <cart:Planar_Coordinate_Information>
+                                <cart:planar_coordinate_encoding_method>Coordinate Pair</cart:planar_coordinate_encoding_method>
+                                <cart:Coordinate_Representation>
+                                    <cart:pixel_resolution_x unit="m/pixel">59110.0455857414781</cart:pixel_resolution_x>
+                                    <cart:pixel_resolution_y unit="m/pixel">58947.2130066028694</cart:pixel_resolution_y>
+                                    <cart:pixel_scale_x unit="pixel/deg">1.00278551532033422</cart:pixel_scale_x>
+                                    <cart:pixel_scale_y unit="pixel/deg">1.00555555555555554</cart:pixel_scale_y>
+                                </cart:Coordinate_Representation>
+                            </cart:Planar_Coordinate_Information>
+                            <cart:Geo_Transformation>
+                                <cart:upperleft_corner_x unit="m">-10669445.5541951191</cart:upperleft_corner_x>
+                                <cart:upperleft_corner_y unit="m">5334722.77709755953</cart:upperleft_corner_y>
+                            </cart:Geo_Transformation>
+                        </cart:Planar>
+                        <cart:Geodetic_Model>
+                            <cart:latitude_type>Planetocentric</cart:latitude_type>
+                            <cart:spheroid_name>MGS75D</cart:spheroid_name>
+                            <cart:a_axis_radius unit="m">3396190</cart:a_axis_radius>
+                            <cart:b_axis_radius unit="m">3396190</cart:b_axis_radius>
+                            <cart:c_axis_radius unit="m">3396190</cart:c_axis_radius>
+                            <cart:longitude_direction>Positive East</cart:longitude_direction>
+                        </cart:Geodetic_Model>
+                    </cart:Horizontal_Coordinate_System_Definition>
+                </cart:Spatial_Reference_Information>
+            </cart:Cartography>
+            <disp:Display_Settings>
+                <Local_Internal_Reference>
+                    <local_identifier_reference>Array_3D_Image</local_identifier_reference>
+                    <local_reference_type>display_settings_to_array</local_reference_type>
+                </Local_Internal_Reference>
+                <disp:Display_Direction>
+                    <disp:horizontal_display_axis>Sample</disp:horizontal_display_axis>
+                    <disp:horizontal_display_direction>Left to Right</disp:horizontal_display_direction>
+                    <disp:vertical_display_axis>Line</disp:vertical_display_axis>
+                    <disp:vertical_display_direction>Top to Bottom</disp:vertical_display_direction>
+                </disp:Display_Direction>
+            </disp:Display_Settings>
+            <cart:Cartography>
+                <cart:Local_Internal_Reference>
+                    <cart:local_identifier_reference>Array_3D_Image</cart:local_identifier_reference>
+                    <cart:local_reference_type>cartography_parameters_to_image_object</cart:local_reference_type>
+                </cart:Local_Internal_Reference>
+            </cart:Cartography>
+        </Discipline_Area>
         <Mission_Area>
             <insight:Observation_Information>
                 <insight:release_number>0001</insight:release_number>
