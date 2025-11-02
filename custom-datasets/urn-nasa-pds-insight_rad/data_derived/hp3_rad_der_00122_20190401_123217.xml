@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-model 
-	href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A10.sch" 
+<?xml-model
+	href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A10.sch"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://pds.nasa.gov/pds4/cart/v1/PDS4_CART_1M00_1970.sch"
     schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<?xml-model 
-	href="https://pds.nasa.gov/pds4/mission/insight/v1/PDS4_INSIGHT_1A10_1830.sch" 
+<?xml-model href="https://pds.nasa.gov/pds4/disp/v1/PDS4_DISP_1N00_1510.sch" 
+    schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model
+	href="https://pds.nasa.gov/pds4/mission/insight/v1/PDS4_INSIGHT_1A10_1830.sch"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <Product_Observational
     xmlns="http://pds.nasa.gov/pds4/pds/v1"
     xmlns:insight="http://pds.nasa.gov/pds4/mission/insight/v1"
+	xmlns:cart="http://pds.nasa.gov/pds4/cart/v1"
+	xmlns:disp="http://pds.nasa.gov/pds4/disp/v1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1     
-    https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A10.xsd
-    
-    http://pds.nasa.gov/pds4/mission/insight/v1 
-    https://pds.nasa.gov/pds4/mission/insight/v1/PDS4_INSIGHT_1A10_1830.xsd">
+    xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A10.xsd
+		http://pds.nasa.gov/pds4/cart/v1 https://pds.nasa.gov/pds4/cart/v1/PDS4_CART_1N00_1970.xsd
+		http://pds.nasa.gov/pds4/disp/v1 https://pds.nasa.gov/pds4/disp/v1/PDS4_DISP_1N00_1510.xsd
+        http://pds.nasa.gov/pds4/mission/insight/v1 https://pds.nasa.gov/pds4/mission/insight/v1/PDS4_INSIGHT_1A10_1830.xsd">
     <Identification_Area>
         <logical_identifier>urn:nasa:pds:insight_rad:data_derived:hp3_rad_der_00122_20190401_123217</logical_identifier>
         <version_id>1.0</version_id>
@@ -69,6 +72,24 @@
                 <reference_type>data_to_target</reference_type>
             </Internal_Reference>
         </Target_Identification>
+        <Mission_Area>
+            <insight:Observation_Information>
+                <insight:release_number>0002</insight:release_number>
+                <insight:mission_phase_name>SURFACE MISSION</insight:mission_phase_name>
+                <insight:product_type>RAD-derived</insight:product_type>
+                <insight:spacecraft_clock_start_count>607350696-25494</insight:spacecraft_clock_start_count>
+                <insight:spacecraft_clock_stop_count>614547537-60293</insight:spacecraft_clock_stop_count>
+                <insight:spacecraft_clock_count_partition>1</insight:spacecraft_clock_count_partition>
+                <insight:start_sol_number>00122</insight:start_sol_number>
+                <insight:stop_sol_number>00203</insight:stop_sol_number>
+                <insight:start_local_mean_solar_time>Sol-00122M10:32:58</insight:start_local_mean_solar_time>
+                <insight:stop_local_mean_solar_time>Sol-00203M12:11:14</insight:stop_local_mean_solar_time>
+                <insight:start_solar_longitude unit="deg">4.206</insight:start_solar_longitude>
+                <insight:stop_solar_longitude unit="deg">43.102</insight:stop_solar_longitude>
+                <insight:software_name>XML Archiv Tool</insight:software_name>
+                <insight:software_version_id>1.0.2</insight:software_version_id>
+            </insight:Observation_Information>
+        </Mission_Area>
         <Discipline_Area>
             <cart:Cartography>
                 <Local_Internal_Reference>
@@ -119,37 +140,7 @@
                     </cart:Horizontal_Coordinate_System_Definition>
                 </cart:Spatial_Reference_Information>
             </cart:Cartography>
-            <disp:Display_Settings>
-                <Local_Internal_Reference>
-                    <local_identifier_reference>Array_3D_Image</local_identifier_reference>
-                    <local_reference_type>display_settings_to_array</local_reference_type>
-                </Local_Internal_Reference>
-                <disp:Display_Direction>
-                    <disp:horizontal_display_axis>Sample</disp:horizontal_display_axis>
-                    <disp:horizontal_display_direction>Left to Right</disp:horizontal_display_direction>
-                    <disp:vertical_display_axis>Line</disp:vertical_display_axis>
-                    <disp:vertical_display_direction>Top to Bottom</disp:vertical_display_direction>
-                </disp:Display_Direction>
-            </disp:Display_Settings>
         </Discipline_Area>
-        <Mission_Area>
-            <insight:Observation_Information>
-                <insight:release_number>0002</insight:release_number>
-                <insight:mission_phase_name>SURFACE MISSION</insight:mission_phase_name>
-                <insight:product_type>RAD-derived</insight:product_type>
-                <insight:spacecraft_clock_start_count>607350696-25494</insight:spacecraft_clock_start_count>
-                <insight:spacecraft_clock_stop_count>614547537-60293</insight:spacecraft_clock_stop_count>
-                <insight:spacecraft_clock_count_partition>1</insight:spacecraft_clock_count_partition>
-                <insight:start_sol_number>00122</insight:start_sol_number>
-                <insight:stop_sol_number>00203</insight:stop_sol_number>
-                <insight:start_local_mean_solar_time>Sol-00122M10:32:58</insight:start_local_mean_solar_time>
-                <insight:stop_local_mean_solar_time>Sol-00203M12:11:14</insight:stop_local_mean_solar_time>
-                <insight:start_solar_longitude unit="deg">4.206</insight:start_solar_longitude>
-                <insight:stop_solar_longitude unit="deg">43.102</insight:stop_solar_longitude>
-                <insight:software_name>XML Archiv Tool</insight:software_name>
-                <insight:software_version_id>1.0.2</insight:software_version_id>
-            </insight:Observation_Information>
-        </Mission_Area>
     </Observation_Area>
     <Reference_List>
         <Internal_Reference>
@@ -164,6 +155,7 @@
     <File_Area_Observational>
         <File>
             <file_name>hp3_rad_der_00122_20190401_123217.tab</file_name>
+            <local_identifier>Array_3D_Image</local_identifier>
             <creation_date_time>2019-08-30T19:47:19.122Z</creation_date_time>
         </File>
         <Table_Character>
