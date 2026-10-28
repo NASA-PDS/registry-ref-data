@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<harvest>
+  <load>
+    <directories>
+      <path>${REGISTRY_REF_DATA}/custom-datasets/naif3</path>
+    </directories>
+  </load>
+  <nodeName>PDS_ENG</nodeName>
+  <registry auth="${REGISTRY_REF_DATA}/conf/dummy.auth.txt">app://connections/direct/localhost.xml</registry>
+  <autogenFields/>
+</harvest>
